@@ -1,0 +1,29 @@
+// C# File Handling Example (Read & Write File)
+
+using System;
+using System.IO;
+
+namespace FileHandlingExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string filePath = "data.txt";
+
+            // Write to file
+            File.WriteAllText(filePath, "Hello, this is C# File Handling example.");
+
+            // Read from file
+            string content = File.ReadAllText(filePath);
+
+            Console.WriteLine("File Content:");
+            Console.WriteLine(content);
+
+            Console.ReadLine();
+        }
+    }
+}
+// Output
+// File Content:
+// Hello, this is C# File Handling example.
